@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/rubik-v19-latin-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v19-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('../fonts/rubik-v19-latin-500.woff2') format('woff2'),
+    url('../fonts/rubik-v19-latin-500.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik";
+}
+
+.container {
+  max-width: 392px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.site-form {
+  
+}
+.site-form__input {
+  width: 35px;
+  height: 35px;
+}
+
+.site-form__paragraph {
+  width: 352px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  color: #000000;
+}
+
+.site-form__registration {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-form__label {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+  
+}
+
+.site-form__text {
+  margin-top: 35px;
+}
+
+.site-form__input {
+  margin-top: 32px;
+  margin-right: 16px;
+  margin-left: 16px;
+
+}
+input:checked + .site-form__input {
+  background-image: url(../img/basketbol.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #0E8784;
+}
+.site-form__inner {
+  padding-top: 44px;
+}
+/* jewioreiore  */
+.form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input:checked + .box {
+  background-color: #0E8784;
+  background-image: url("../images/icecream.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -80px center;
+}
+
+input:disabled + .box {
+  background-color: red;
+  opacity: 0.4;
+}
+
+input:focus + .box {
+  /* border: 5px solid blue; */
+}
+
+.box {
+  width: 300px;
+  padding: 50px;
+  border: 2px solid black;
+  transition: background-color 0.4s;
+}
+
+.box:hover {
+  background-color: #FDD6BA;
+}
